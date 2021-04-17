@@ -1,0 +1,21 @@
+Curl.md
+
+Curl command is used to transfer data to or from a server. It is a preferred automated process to obtain info
+from the server at the other end.
+
+Syntax:
+curl [options][{urls}].com
+
+Example:
+curl -s http://ipinfo.io/104.223.95.86
+{
+  "ip": "104.223.95.86",
+  "hostname": "unassigned.quadranet.com",
+  "city": "Atlanta",
+  "region": "Georgia",
+  "country": "US",
+  "loc": "33.7525,-84.3888",
+  "org": "AS8100 QuadraNet Enterprises LLC",
+  "postal": "30303",
+  "timezone": "America/New_York",
+  "readme": "https://ipinfo.io/missingauth"

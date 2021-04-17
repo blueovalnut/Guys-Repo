@@ -1,0 +1,22 @@
+User & Group Configuration
+
+To display your UID, GID, and other permissions info
+    - Run: id
+
+To display the UID, GID, and permissions info for each user on the system.
+    - Run: id <username>
+
+To display what groups a user is in:
+    - Run: groups <username>
+
+To remove a user from a group:
+    - Run `sudo usermod -G (user name) (user name).
+
+To remove any users from the system:
+    - Run: sudo deluser --remove-home (user name)
+
+To add a group
+    - Run: sudo addgroup (group name)
+
+To remove a group:
+    - Run: sudo delgroup (group name)

@@ -1,0 +1,11 @@
+# Tar archival details
+
+Command syntax to create an archive and generate logs to be saved therein:
+tar cvWf [name of archival file].tar [name of source file to be archived] > [name of the file being created
+in the archive].txt
+    - for example: tar cvWf journey_logs.tar daily_blogs/* > "$(date '+%F').txt
+    - using this script the system will add the current date as the file name for the .txt output files
+
+Command syntax to extract files from archive:
+tar xvvf [archive name].tar -C [tar arhcive directory] [directory to place extracted files] 
+    - for example: tar xvvf journey_logs.tar -C 2021-04-07.txt

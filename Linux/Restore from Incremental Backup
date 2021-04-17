@@ -1,0 +1,11 @@
+# Restoring data from Incremental Backups
+
+First step in establishing an incremental backup system is to create a baseline backup, preferrably as soon
+as the system is built and ready for production. 
+
+Backup Initialization Command Syntax:
+tar cvvWf [name of tar repository].tar --listed-incremental=[name of backup file].snar --level=0 [directory 
+to save to]
+
+Backup Extraction Syntax:
+tar xvvf [name of tar repository].tar -R -C [location of tarball] [file to extract]

@@ -1,0 +1,18 @@
+Apt Utility
+
+Apt is a command-line utility for installing, updating, removing and otherwise managing packages in Ubuntu,
+Debian and related Linux distros. Most of the apt commands must be proceeded by sudo.
+
+Syntax:
+Installing packages with apt:    
+    sudo apt install (package name)(package name)
+
+Removing packages with apt:
+    sudo apt remove (package name)
+
+To keep packages up to date:
+    sudo apt update
+    sudo apt upgrade
+
+To view currently installed packages
+    sudo apt list

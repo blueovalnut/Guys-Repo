@@ -1,0 +1,12 @@
+Cron Jobs:
+
+To set up cron jobs use the following steps:
+    1. Verify that the cron service is running: Run "systemctl status cron"
+    2. Open crontab file to see what jobs are already present and be able to add new tasks: Run "crontab -e"
+    3. To add new tasks move to the bottom of the list and add the requisite lines in the following format:
+        "* * * * * tar cvf [path of desired tarball].tar [path of target to archive]"
+        The schduling details are as follows in place of the *'s listed above:
+            (minute) (hour) (day of month) (month) (day of week M-F)
+            Asterisc's are used to indicate all. 
+            So "36 14 * * 6" in conjunction with the command would instruct system to perform the task at 2:36PM
+            on Saturday's regardless of the month or day of the month.  
